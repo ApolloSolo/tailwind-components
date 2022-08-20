@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import HorizontalCard from "./components/Cards/HorizontalCard";
+import SimpleCard from "./components/Cards/SimpleCard";
+import VerticalCard from "./components/Cards/VerticalCard";
+import SimpleNav from "./components/Navbars/Horizontal/SimpleNav";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="my-4">
+        <h1 className="text-center text-3xl">Cards</h1>
+        <VerticalCard />
+        <SimpleCard />
+        <HorizontalCard />
+      </div>
+      <div className="my-4">
+      <h1 className="text-center text-3xl">Cards</h1>
+        <SimpleNav/>
+      </div>
     </div>
   );
 }
